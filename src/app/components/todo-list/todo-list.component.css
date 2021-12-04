@@ -1,0 +1,18 @@
+.err {
+    color: red;
+    font-style: italic;
+}
+.table-data {
+    margin: 4rem;
+}
+.btn {
+    cursor: pointer;
+    background: transparent;
+    color: black;
+    border: 1px solid rgb(158, 158, 158);
+}
+.btn:hover {
+    box-shadow: 0px 0px 4px #888888;
+    transition-duration: 0.4s ;
+   
+}

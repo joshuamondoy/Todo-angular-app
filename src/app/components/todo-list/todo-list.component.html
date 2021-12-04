@@ -1,0 +1,38 @@
+<div class="container">
+    <h1>Todo List</h1>
+    <p class="err">{{errMsg}}</p>
+    <div id="container">
+      <app-add-form></app-add-form>
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Description</th>
+            <th scope="col">Date</th>
+            <th scope="col">Done</th>
+            <th scope="col"></th>
+          </tr>
+        </thead>
+        <tbody *ngFor="let todo of todoList">
+          <tr class="table-data">
+            <td> {{todo.description}} </td>
+            <td> {{todo.date | date}} </td>
+            <td> {{todo.done}} </td>
+            <td>
+              <div class="btn-toolbar" >
+                <button type="button"
+                  class="btn"
+                  (click)="onUpdate(todo)"
+                  >Update
+                </button>
+                <button type="button" 
+                  class="btn"
+                  (click)="onDelete(todo.id, username)"
+                  >Delete
+                </button>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    </div>

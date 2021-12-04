@@ -1,0 +1,43 @@
+ul {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 2rem;
+    margin: 1rem;
+}
+nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    background: white;
+    box-shadow: 0px 0px 4px #888888;
+
+
+}
+.login {
+    margin-left: auto;
+    
+}
+.logout {
+    margin-right: 2rem;
+}
+.brand {
+    font-size: 1.5rem;
+    color: black;
+    font-weight: bolder;
+}
+li {
+    list-style: none;
+    
+}
+a {
+    text-decoration: none;
+    color: rgb(85, 85, 85);
+
+}
+a:hover {
+    color: black;
+    transition-duration: 0.4s;
+}

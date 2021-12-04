@@ -1,0 +1,13 @@
+form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 3rem;
+    align-items: flex-start;
+}
+.btn {
+    margin-top: 1rem;
+}
+p {
+    color: red;
+    font-style: italic;
+}

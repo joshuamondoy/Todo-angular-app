@@ -1,0 +1,19 @@
+<div class="container">
+    <form #f="ngForm" (ngSubmit)="handleBasicAuthLogin(f)">
+        <p *ngIf="validCredentials">{{errMsg}}</p>
+        User Name: <input type="text" 
+                        name="username" 
+                        id="username"
+                        ngModel
+                        >
+        Password: <input type="password" 
+                        name="password"
+                        ngModel
+                        >
+        <button
+            class="btn btn-primary"
+            type="submit"
+            >Login
+        </button>
+    </form>
+</div>

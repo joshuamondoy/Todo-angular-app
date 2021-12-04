@@ -1,0 +1,39 @@
+    <form #formValues="ngForm" (ngSubmit)="onSubmit(formValues)">
+        <div class="form-input">
+            <div class="form-group">
+                <label for="name">Task</label>
+                    <input 
+                        type="text"
+                        placeholder="Enter task"
+                        id="todo-input"
+                        class="form-control"
+                        required
+                        name="description"
+                        ngModel
+                    >
+                    <label id="date">Date</label>
+                    <input 
+                        type="date" 
+                        class="form-control"
+                        id="date-input"
+                        required
+                        name="date"
+                        ngModel
+                    >
+            </div>
+             <div class="btn-toolbar">
+                <button class="btn btn-success" 
+                    type="submit" 
+                    [disabled]="!formValues.valid"
+                    >{{ updateMode ? 'Update' : 'Add'}}
+                </button>
+                <button class="btn btn-danger" 
+                    type="button" 
+                    (click)="onClearFields()"
+                    >Clear
+                </button>
+             </div>
+        </div>
+         
+     </form>
+     

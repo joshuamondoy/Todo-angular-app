@@ -1,0 +1,43 @@
+
+.form-group{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: 400px;
+}
+#date {
+  margin-top: 1rem;
+}
+#date-input {
+  cursor:text;
+}
+.date {
+  border: 1px solid rgb(214, 214, 214);
+  border-radius: 3px;
+}
+.form-input {
+    margin-bottom: 1rem;
+}
+.btn-danger{
+  background: transparent;
+  color: #D9534F;
+}
+.btn-danger:hover {
+  background: #D9534F;
+  transition-duration: 0.4s;
+  color: white;
+}
+.btn {
+    width: 80px;
+}
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}

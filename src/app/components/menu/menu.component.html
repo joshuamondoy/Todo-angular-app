@@ -1,0 +1,11 @@
+<header>
+    <nav >
+        <ul>
+            <li><a  class="brand">MYTODOs</a></li>
+            <li><a *ngIf="this.authenticationService.isUserLogedIn()" [routerLink]="['/welcome/:username']">Home</a></li>
+            <li><a *ngIf="this.authenticationService.isUserLogedIn()" [routerLink]="['/todo-list']">Todo List</a></li>
+            <li class="login"><a *ngIf="!this.authenticationService.isUserLogedIn()" [routerLink]="['/login']">Login</a></li>
+            <li class="logout"><a *ngIf="this.authenticationService.isUserLogedIn()" [routerLink]="['/logout']">Logout</a></li>
+        </ul>
+    </nav>
+</header>
