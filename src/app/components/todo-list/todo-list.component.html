@@ -6,6 +6,7 @@
       <table class="table">
         <thead>
           <tr>
+            <th scope="col">Name</th>
             <th scope="col">Description</th>
             <th scope="col">Date</th>
             <th scope="col">Done</th>
@@ -14,9 +15,10 @@
         </thead>
         <tbody *ngFor="let todo of todoList">
           <tr class="table-data">
+            <td> {{todo.username}} </td>
             <td> {{todo.description}} </td>
             <td> {{todo.date | date}} </td>
-            <td> {{todo.done}} </td>
+            <td> {{todo.isDone}} </td>
             <td>
               <div class="btn-toolbar" >
                 <button type="button"

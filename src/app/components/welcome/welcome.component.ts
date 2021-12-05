@@ -16,7 +16,7 @@ username: string ='';
     this.username = this.acitivatedRoute.snapshot.params['username'];
   }
   getHelloWorld() {
-    this.httpRequestservice.getTodosWithVariable(this.username)
+    this.httpRequestservice.getHelloWorldMessage(this.username)
       .subscribe(data => console.log(data)
       )
   }

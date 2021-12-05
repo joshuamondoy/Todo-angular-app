@@ -27,12 +27,12 @@ export class HttpRequestService {
   getTodos(){
     return this.httpClient.get<Todo>(API_URL  + '/todo-list');
   }
-  getTodosWithVariable(description: string){
+  getHelloWorldMessage(username: string){
     // let basicAutHeaderString = this.createAutHttpHeader();
     // let headers = new HttpHeaders({
     //   Authorization: basicAutHeaderString
     // })
-    return this.httpClient.get<Todo>(API_URL  + '/todo-list/' + description
+    return this.httpClient.get<Todo>(API_URL  + '/todo-list/' + username
       // {headers}
       )
   }
